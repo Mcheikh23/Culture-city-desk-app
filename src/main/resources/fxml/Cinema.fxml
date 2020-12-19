@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="950.0" style="-fx-background-color: #60839b;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.CinemaController">
+   <children>
+      <ImageView fx:id="exitbtn" fitHeight="34.0" fitWidth="39.0" layoutX="884.0" layoutY="21.0" onMouseClicked="#exitbtn">
+         <image>
+            <Image url="@../image/cancel.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="retourBtn" fitHeight="34.0" fitWidth="39.0" layoutX="813.0" layoutY="23.0" onMouseClicked="#retour">
+         <image>
+            <Image url="@../image/back.png" />
+         </image>
+      </ImageView>
+      <Hyperlink layoutX="16.0" layoutY="455.0" textFill="WHITE">
+         <font>
+            <Font name="Microsoft YaHei UI Bold" size="18.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink layoutX="26.0" layoutY="465.0" textFill="WHITE">
+         <font>
+            <Font name="Microsoft YaHei UI Bold" size="18.0" />
+         </font>
+      </Hyperlink>
+      <ImageView fitHeight="765.0" fitWidth="730.0" layoutX="226.0" layoutY="166.0">
+         <image>
+            <Image url="@../image/73313644_542473203230742_8929784187217510400_n.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="94.0" fitWidth="224.0" layoutX="-3.0" layoutY="40.0">
+         <image>
+            <Image url="@../image/Cit-de-la-culture.png" />
+         </image>
+      </ImageView>
+      <Hyperlink fx:id="lienfilm" layoutX="15.0" layoutY="288.0" text="Film's management" textFill="WHITE">
+         <font>
+            <Font name="Microsoft YaHei UI Bold" size="18.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="lienseance" layoutX="5.0" layoutY="336.0" text="Theater's management" textFill="WHITE">
+         <font>
+            <Font name="Microsoft YaHei UI Bold" size="18.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="lienSalle" layoutX="5.0" layoutY="383.0" text="Session's management" textFill="WHITE">
+         <font>
+            <Font name="Microsoft YaHei UI Bold" size="18.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink layoutX="127.0" layoutY="532.0" textFill="WHITE">
+         <font>
+            <Font name="Microsoft YaHei UI Bold" size="18.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink layoutX="26.0" layoutY="465.0" prefHeight="32.0" prefWidth="12.0" textFill="WHITE">
+         <font>
+            <Font name="Microsoft YaHei UI Bold" size="18.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</AnchorPane>

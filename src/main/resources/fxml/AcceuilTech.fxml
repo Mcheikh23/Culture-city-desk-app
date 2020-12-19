@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.AcceuilTechController">
+   <children>
+      <AnchorPane layoutY="5.0" prefHeight="600.0" prefWidth="1093.0" styleClass="parent" stylesheets="@stylesheet.css">
+         <children>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1093.0">
+               <children>
+                  <VBox prefHeight="600.0" prefWidth="250.0" styleClass="sidebar1" stylesheets="@stylesheet.css">
+                     <children>
+                        <Label prefHeight="35.0" prefWidth="251.0" style="-fx-background-color: #215e91;" text="Welcome to Events" textFill="#f2f2f5">
+                           <font>
+                              <Font name="Ebrima Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER_LEFT">
+                           <children>
+                              <FontAwesomeIconView glyphName="SEARCH" glyphStyle="-fx-fill:#BDBDBD" size="16">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </FontAwesomeIconView>
+                              <JFXTextField focusColor="#d7d9e0" prefHeight="25.0" prefWidth="193.0" style="-fx-background-color: #d7d9e0;" unFocusColor="#e1dbdb">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox fx:id="id_evta" alignment="CENTER_LEFT" layoutX="10.0" layoutY="139.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#btn_afficherTouse" prefHeight="40.0" prefWidth="250.0" styleClass="btns1">
+                           <children>
+                              <FontAwesomeIconView glyphName="LIST" glyphStyle="-fx-fill:#f8f5f5" size="16">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </FontAwesomeIconView>
+                              <Label fx:id="evnta" text="Events" textFill="#f8f5f5">
+                                 <font>
+                                    <Font name="Ebrima Bold" size="13.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                        <AnchorPane prefHeight="490.0" prefWidth="245.0">
+                           <children>
+                              <ImageView fitHeight="116.0" fitWidth="243.0" layoutX="4.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../../Desktop/fxmlhchm/Cit-de-la-culture.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="logout" layoutX="78.0" layoutY="380.0" mnemonicParsing="false" onAction="#logout" opacity="0.55" prefHeight="78.0" prefWidth="160.0" style="-fx-background-color: #4682B4;" text="Sign out">
+                                 <font>
+                                    <Font name="Berlin Sans FB Bold" size="18.0" />
+                                 </font>
+                              </Button>
+                              <FontAwesomeIconView glyphName="HOME" layoutX="14.0" layoutY="447.0" size="80" text="" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="250.0" prefHeight="600.0" prefWidth="843.0">
+                     <children>
+                        <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="843.0" style="-fx-background-color: #fff;" />
+                        <Pane fx:id="content" prefHeight="550.0" prefWidth="795.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

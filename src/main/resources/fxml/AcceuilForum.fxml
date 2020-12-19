@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1093.0" styleClass="parent" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.AcceuilForumController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1093.0">
+         <children>
+            <VBox prefHeight="600.0" prefWidth="250.0" styleClass="sidebar1" stylesheets="@stylesheet.css">
+               <children>
+                  <Label prefHeight="28.0" prefWidth="250.0" style="-fx-background-color: #215e91;" text="Welcome to Forum" textFill="#f2f2f5">
+                     <font>
+                        <Font name="Arial Narrow Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <HBox fx:id="id_rechercheavance" alignment="CENTER_LEFT">
+                     <children>
+                        <FontAwesomeIconView glyphName="SEARCH" glyphStyle="-fx-fill:#BDBDBD" size="16">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <JFXTextField fx:id="textRechercher" focusColor="#d7d9e0" prefHeight="25.0" prefWidth="193.0" style="-fx-background-color: #FBEFEB; -fx-border-color: #805850;" unFocusColor="#e1dbdb">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </JFXTextField>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox fx:id="id_afficherTous" alignment="CENTER_LEFT" layoutX="10.0" layoutY="139.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#btn_afficherTous" prefHeight="40.0" prefWidth="250.0" styleClass="btns1">
+                     <children>
+                        <FontAwesomeIconView glyphName="LIST" glyphStyle="-fx-fill:#f8f5f5" size="16">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <Label text="All topics" textFill="#f8f5f5">
+                           <font>
+                              <Font name="Ebrima Bold" size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox fx:id="id_afficherMesSujets" alignment="CENTER_LEFT" layoutX="10.0" layoutY="179.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#btn_afficherTous" prefHeight="40.0" prefWidth="250.0" styleClass="btns1">
+                     <children>
+                        <FontAwesomeIconView glyphName="LIST" glyphStyle="-fx-fill:#f8f5f5" size="16">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <Label text="My topics" textFill="#f8f5f5">
+                           <font>
+                              <Font name="Ebrima Bold" size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox fx:id="id_ajouter" alignment="CENTER_LEFT" layoutX="10.0" layoutY="219.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#btn_afficherTous" prefHeight="40.0" prefWidth="250.0" styleClass="btns1">
+                     <children>
+                        <FontAwesomeIconView glyphName="USER_PLUS" glyphStyle="-fx-fill:#f8f5f5" size="16">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <Label text="Add a topic" textFill="#f8f5f5">
+                           <font>
+                              <Font name="Ebrima Bold" size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox fx:id="id_mailing" alignment="CENTER_LEFT" layoutX="10.0" layoutY="163.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#btn_afficherTous" prefHeight="40.0" prefWidth="250.0" styleClass="btns1">
+                     <children>
+                        <FontAwesomeIconView glyphName="SEND_ALT" glyphStyle="-fx-fill:#f8f5f5" size="16">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <Label text="Mailing" textFill="#f8f5f5">
+                           <font>
+                              <Font name="Ebrima Bold" size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox fx:id="id_sms" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#btn_afficherTous" prefHeight="40.0" prefWidth="250.0" styleClass="btns1">
+                     <children>
+                        <FontAwesomeIconView glyphName="MOBILE" glyphStyle="-fx-fill:#f8f5f5" size="25">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <Label text="SMS" textFill="#f8f5f5">
+                           <font>
+                              <Font name="Ebrima Bold" size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox fx:id="id_facebook" alignment="CENTER_LEFT" layoutX="10.0" layoutY="163.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#btn_afficherTous" prefHeight="40.0" prefWidth="250.0" styleClass="btns1">
+                     <children>
+                        <FontAwesomeIconView glyphName="FACEBOOK_OFFICIAL" glyphStyle="-fx-fill:#f8f5f5" size="16">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <Label text="FaceBook" textFill="#f8f5f5">
+                           <font>
+                              <Font name="Ebrima Bold" size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox fx:id="id_statistiquesforum" alignment="CENTER_LEFT" layoutX="10.0" layoutY="163.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#btn_afficherTous" prefHeight="40.0" prefWidth="250.0" styleClass="btns1">
+                     <children>
+                        <FontAwesomeIconView glyphName="BAR_CHART_ALT" glyphStyle="-fx-fill:#f8f5f5" size="16">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <Label text="Statistics" textFill="#f8f5f5">
+                           <font>
+                              <Font name="Ebrima Bold" size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <SplitPane dividerPositions="0.581267217630854" orientation="VERTICAL" prefHeight="285.0" prefWidth="250.0" style="-fx-border-color: #4682B4;">
+                    <items>
+                        <AnchorPane prefHeight="154.0" prefWidth="248.0" style="-fx-background-color: #4682B4; -fx-border-color: #4682B4;">
+                           <children>
+                              <ImageView fitHeight="116.0" fitWidth="243.0" layoutX="2.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Cit-de-la-culture.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="221.0" prefWidth="250.0" style="-fx-background-color: #4682B4;">
+                           <children>
+                              <Button fx:id="logout" layoutX="78.0" layoutY="11.0" mnemonicParsing="false" onAction="#logout" opacity="0.55" prefHeight="78.0" prefWidth="160.0" style="-fx-background-color: #4682B4;" text="Return">
+                                 <font>
+                                    <Font name="Berlin Sans FB Bold" size="18.0" />
+                                 </font>
+                              </Button>
+                              <FontAwesomeIconView glyphName="HOME" layoutX="4.0" layoutY="77.0" size="80" text="" />
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </VBox>
+            <VBox layoutX="250.0" prefHeight="600.0" prefWidth="843.0">
+               <children>
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="843.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="12.0" text="Pseudo :" underline="true">
+                           <font>
+                              <Font name="Comic Sans MS Bold Italic" size="19.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField layoutX="133.0" layoutY="13.0" prefHeight="25.0" prefWidth="160.0" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="content" prefHeight="487.0" prefWidth="843.0" />
+                  <AnchorPane prefHeight="63.0" prefWidth="843.0" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.ProfilUtController">
+   <children>
+      <Label layoutX="51.0" layoutY="199.0" text="User name" textFill="#161ad6">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="64.0" layoutY="242.0" text="Email" textFill="#161ad6">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="67.0" layoutY="282.0" text="Role" textFill="#161ad6">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="65.0" layoutY="321.0" text="Name" textFill="#161ad6">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="58.0" layoutY="364.0" text="Surname" textFill="#161ad6">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <ImageView fx:id="idImg" fitHeight="193.0" fitWidth="200.0" layoutX="457.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="idUser" layoutX="196.0" layoutY="199.0" text="Label">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Label fx:id="idEmail" layoutX="196.0" layoutY="242.0" text="Label">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Label fx:id="idRole" layoutX="196.0" layoutY="282.0" text="Label">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Label fx:id="idNom" layoutX="196.0" layoutY="321.0" text="Label">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Label fx:id="idPrenom" layoutX="196.0" layoutY="364.0" text="Label">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Pane layoutY="-3.0" prefHeight="113.0" prefWidth="748.0" style="-fx-background-color: #4682B4;">
+         <children>
+            <Label layoutX="222.0" layoutY="39.0" prefHeight="23.0" prefWidth="282.0" text="User Management" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="83.0" fitWidth="200.0" layoutX="476.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Utilitaire/Cit-de-la-culture.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="btn_exit" layoutX="708.0" layoutY="10.0" onMousePressed="#aaaa" prefHeight="17.0" prefWidth="12.0" text="X" textFill="BLACK">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="retour" layoutX="22.0" layoutY="12.0" onAction="#retour" prefHeight="36.0" prefWidth="132.0" text="back">
+               <font>
+                  <Font name="Arial Italic" size="15.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="26.0" fitWidth="33.0" layoutX="35.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Utilitaire/retour-png-8.png" />
+               </image>
+            </ImageView>
+       <JFXButton fx:id="idLogout" layoutX="587.0" layoutY="445.0" onAction="#logout" prefHeight="25.0" prefWidth="141.0" style="-fx-background-color: #008F95;" text="Log out" textFill="WHITE" />
+      <Hyperlink fx:id="modifier" layoutX="352.0" layoutY="284.0" onAction="#modifier" text="Update" />
+      <Hyperlink fx:id="supp" layoutX="58.0" layoutY="446.0" onAction="#supp" prefHeight="23.0" prefWidth="200.0" text="Delete this user" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="462.0" prefWidth="735.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.ReclamationController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="-1.0" layoutY="4.0" prefHeight="451.0" prefWidth="735.0" style=": ;">
+         <children>
+            <TextArea fx:id="mail" layoutX="155.0" layoutY="118.0" prefHeight="122.0" prefWidth="399.0" style="-fx-background-color: #BFBCC7;" />
+            <Button fx:id="send" layoutX="289.0" layoutY="268.0" mnemonicParsing="false" onAction="#SendMail" prefHeight="39.0" prefWidth="132.0" style="-fx-background-color: #4682B4;" />
+            <Label layoutX="251.0" layoutY="72.0" text="Please enter your complaint" textFill="STEELBLUE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView glyphName="ENVELOPE_ALT" layoutX="343.0" layoutY="295.0" size="25" text="" />
+            <Text layoutX="178.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact the administration by mail">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

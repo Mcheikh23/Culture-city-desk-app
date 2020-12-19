@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="651.0" prefWidth="1117.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.ListeUtController">
+  
+   <children>
+      <Label layoutX="505.0" layoutY="22.0" prefHeight="54.0" prefWidth="107.0" text="USERS" textFill="#4f17d3">
+         <font>
+            <Font name="Century Gothic Italic" size="31.0" />
+         </font>
+      </Label>
+      <ScrollPane fx:id="pane" layoutX="12.0" layoutY="94.0" prefHeight="464.0" prefWidth="1093.0" />
+      <Label fx:id="btn_exit" layoutX="1084.0" layoutY="14.0" onMousePressed="#handleButtonAction" prefHeight="17.0" prefWidth="12.0" text="X" textFill="BLACK">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="monimage" fitHeight="62.0" fitWidth="89.0" layoutX="966.0" layoutY="18.0" onMousePressed="#monimage" pickOnBounds="true" preserveRatio="true" />
+      <JFXButton fx:id="retour" layoutX="14.0" layoutY="10.0" onAction="#retour" prefHeight="36.0" prefWidth="132.0" text="back">
+         <font>
+            <Font name="Arial Italic" size="15.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="26.0" fitWidth="33.0" layoutX="28.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Utilitaire/retour-png-8.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

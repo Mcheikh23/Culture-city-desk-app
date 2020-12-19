@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.MonProfilController">
+   <children>
+      <Label layoutX="49.0" layoutY="141.0" text="User name" textFill="#161ad6">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="64.0" layoutY="242.0" text="Email" textFill="#161ad6">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="67.0" layoutY="282.0" text="Role" textFill="#161ad6">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="65.0" layoutY="321.0" text="Name" textFill="#161ad6">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="58.0" layoutY="364.0" text="Surname" textFill="#161ad6">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <ImageView fx:id="idImg1" fitHeight="193.0" fitWidth="200.0" layoutX="483.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="idUser1" layoutX="196.0" layoutY="138.0" text="Label">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Label fx:id="idEmail1" layoutX="196.0" layoutY="242.0" prefHeight="26.0" prefWidth="247.0" text="Label">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Label fx:id="idRole1" layoutX="196.0" layoutY="282.0" text="Label">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Label fx:id="idNom1" layoutX="196.0" layoutY="321.0" text="Label">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Label fx:id="idPrenom1" layoutX="196.0" layoutY="364.0" text="Label">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Pane layoutY="-3.0" prefHeight="113.0" prefWidth="748.0" style="-fx-background-color: #4682B4;">
+         <children>
+            <Label layoutX="222.0" layoutY="39.0" prefHeight="23.0" prefWidth="282.0" text="User Management" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="83.0" fitWidth="200.0" layoutX="488.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Utilitaire/Cit-de-la-culture.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="btn_exit" layoutX="716.0" layoutY="14.0" onMousePressed="#handleButtonAction" prefHeight="17.0" prefWidth="12.0" text="X" textFill="BLACK">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="retour" layoutX="7.0" layoutY="20.0" onAction="#retour" prefHeight="36.0" prefWidth="132.0" text="Back">
+               <font>
+                  <Font name="Arial Italic" size="15.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="26.0" fitWidth="33.0" layoutX="23.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Utilitaire/retour-png-8.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <JFXButton fx:id="idLogout1" layoutX="570.0" layoutY="413.0" onAction="#handleBtnAction" prefHeight="25.0" prefWidth="141.0" style="-fx-background-color: #008F95;" text="log out" textFill="WHITE" />
+      <Label layoutX="56.0" layoutY="192.0" text="Password" textFill="#4511c6">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="idModif" layoutX="380.0" layoutY="201.0" onAction="#handleMdpAction" text="Change" />
+      <JFXPasswordField fx:id="idPass1" layoutX="167.0" layoutY="190.0" prefHeight="25.0" prefWidth="178.0" promptText="Enter your password" />
+   </children>
+</AnchorPane>

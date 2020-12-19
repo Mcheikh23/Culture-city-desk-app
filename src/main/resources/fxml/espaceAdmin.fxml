@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.EspaceAdminController">
+   <children>
+      <ImageView fx:id="exitbtn" fitHeight="34.0" fitWidth="39.0" layoutX="885.0" layoutY="37.0" onMouseClicked="#exitbtn">
+         <image>
+            <Image url="@cancel.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="retourBtn" fitHeight="34.0" fitWidth="39.0" layoutX="819.0" layoutY="37.0" onMouseClicked="#retourBtn">
+         <image>
+            <Image url="@back.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#60839b87" height="692.0" layoutX="1.0" layoutY="1.0" stroke="#60839b" strokeType="INSIDE" width="220.0" />
+      <ImageView fitHeight="101.0" fitWidth="220.0" layoutX="2.0" layoutY="85.0">
+         <image>
+            <Image url="@../image/Cit-de-la-culture.png" />
+         </image>
+      </ImageView>
+      <Hyperlink fx:id="lienClub" layoutX="11.0" layoutY="300.0" text="Club's management" textFill="WHITE">
+         <font>
+            <Font name="Microsoft YaHei UI Bold" size="18.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="lienVente" layoutX="11.0" layoutY="336.0" text="Saler's management" textFill="WHITE">
+         <font>
+            <Font name="Microsoft YaHei UI Bold" size="18.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="lienCinema" layoutX="6.0" layoutY="374.0" text="Cinema's management" textFill="WHITE">
+         <font>
+            <Font name="Microsoft YaHei UI Bold" size="18.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink layoutX="36.0" layoutY="475.0" textFill="WHITE">
+         <font>
+            <Font name="Microsoft YaHei UI Bold" size="18.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="lienBiblio" layoutX="6.0" layoutY="413.0" text="Library's management" textFill="WHITE">
+         <font>
+            <Font name="Microsoft YaHei UI Bold" size="18.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="lienForum" layoutX="5.0" layoutY="449.0" text="Forum's management" textFill="WHITE">
+         <font>
+            <Font name="Microsoft YaHei UI Bold" size="18.0" />
+         </font>
+      </Hyperlink>
+      <ImageView fitHeight="603.0" fitWidth="704.0" layoutX="221.0" layoutY="90.0">
+         <image>
+            <Image url="@../image/download.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="339.0" layoutY="-17.0" text="Admin's Space" textFill="#4493d3">
+         <font>
+            <Font name="Bodoni MT Condensed" size="96.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="608.0" prefWidth="929.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.ListedesarticlesController">
+   <children>
+      <TableView fx:id="tableart" layoutX="370.0" layoutY="161.0" prefHeight="189.0" prefWidth="325.0">
+        <columns>
+          <TableColumn fx:id="prixart" prefWidth="147.0" text="Price" />
+          <TableColumn fx:id="nomart" prefWidth="177.0" text="Name" />
+        </columns>
+      </TableView>
+      <Button fx:id="btncommande" layoutX="481.0" layoutY="375.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="103.0" style="-fx-background-color: #14477f; -fx-background-radius: 5;" text="Order" textFill="WHITE">
+         <font>
+            <Font name="Bell MT Bold" size="16.0" />
+         </font></Button>
+      <Button fx:id="btnconsl" layoutX="442.0" layoutY="432.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="181.0" style="-fx-background-color: #14477f; -fx-background-radius: 5;" text="List of articles ordred" textFill="WHITE">
+         <font>
+            <Font name="Bell MT Bold" size="16.0" />
+         </font></Button>
+      <TextField fx:id="qte" layoutX="724.0" layoutY="478.0" />
+      <Label fx:id="idart" layoutX="414.0" layoutY="85.0" />
+      <Label layoutX="742.0" layoutY="437.0" prefHeight="29.0" prefWidth="112.0" text="Insert quantity" textFill="#577dc3">
+         <font>
+            <Font name="Bell MT Bold" size="17.0" />
+         </font></Label>
+      <ImageView fx:id="imgart" fitHeight="188.0" fitWidth="190.0" layoutX="680.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true" />
+      <Pane layoutX="1.0" prefHeight="615.0" prefWidth="226.0" style="-fx-background-color: #4682B4;">
+         <children>
+            <ImageView fitHeight="95.0" fitWidth="226.0" layoutY="391.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Cit-de-la-culture.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="idreturn" layoutX="48.0" layoutY="513.0" mnemonicParsing="false" onAction="#retour" prefHeight="77.0" prefWidth="131.0" style="-fx-background-color: #4682B4;" text="Return">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Label layoutX="362.0" layoutY="69.0" prefHeight="32.0" prefWidth="340.0" text="Consult Articles" textFill="#6971bf">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="41.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

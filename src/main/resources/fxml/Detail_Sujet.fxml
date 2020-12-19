@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="527.0" prefWidth="898.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.Detail_SujetController">
+   <children>
+      <ScrollPane id="msg" fitToHeight="true" focusTraversable="false" hbarPolicy="NEVER" layoutX="46.0" layoutY="89.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" onDragDetected="#goReceive" prefHeight="345.0" prefWidth="774.0" vvalue="1.0" fx:id="x">
+         <content>
+            <VBox fx:id="msget" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="344.0" prefWidth="772.0">
+               <children>
+                  <HBox fx:id="id_hbox" prefHeight="51.0" prefWidth="590.0" />
+               </children></VBox>
+         </content>
+      </ScrollPane>
+      <Button id="button" fx:id="id_ajout_Comment" layoutX="733.0" layoutY="448.0" mnemonicParsing="false" onAction="#ajoutComment" prefHeight="32.0" prefWidth="91.0" text="Send">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <TextArea id="msg" fx:id="text_comment" layoutX="46.0" layoutY="436.0" onKeyTyped="#isWriting" prefHeight="55.0" prefWidth="673.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextArea>
+   </children>
+</AnchorPane>

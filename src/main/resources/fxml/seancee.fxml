@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.SeanceeController">
+   <children>
+      <TableView fx:id="tableSeance" layoutX="306.0" layoutY="198.0" prefHeight="447.0" prefWidth="603.0">
+         <columns>
+            <TableColumn fx:id="listFilm" prefWidth="223.0" text="Title" />
+            <TableColumn fx:id="listSalle" prefWidth="151.0" text="Theater" />
+            <TableColumn fx:id="listDate" prefWidth="243.0" text="Date" />
+         </columns>
+         <contextMenu>
+            <ContextMenu>
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+               </items>
+            </ContextMenu>
+         </contextMenu>
+      </TableView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#60839b87" height="680.0" layoutX="1.0" layoutY="1.0" stroke="#60839b" strokeType="INSIDE" width="220.0" />
+      <ImageView fitHeight="113.0" fitWidth="231.0" layoutX="-6.0" layoutY="91.0">
+         <image>
+            <Image url="@Cit-de-la-culture.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="recherchetext" layoutX="354.0" layoutY="152.0" prefHeight="34.0" prefWidth="330.0" promptText="Search" />
+      <ImageView fx:id="titre1" fitHeight="34.0" fitWidth="34.0" layoutX="313.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@search.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="exitbtn" fitHeight="34.0" fitWidth="39.0" layoutX="870.0" layoutY="17.0" onMouseClicked="#exitbtn">
+         <image>
+            <Image url="@cancel.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="retourBtn" fitHeight="34.0" fitWidth="39.0" layoutX="804.0" layoutY="17.0" onMouseClicked="#retourBtn">
+         <image>
+            <Image url="@back.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="rr" layoutX="46.0" layoutY="486.0" mnemonicParsing="false" onAction="#rr" prefHeight="79.0" prefWidth="128.0" text="Return" />
+   </children>
+</AnchorPane>

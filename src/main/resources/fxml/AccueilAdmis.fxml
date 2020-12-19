@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.AccueilAdmisController">
+   <children>
+      <AnchorPane layoutX="-1.0" prefHeight="125.0" prefWidth="600.0" style="-fx-background-color: #f0f0f0;">
+         <children>
+            <Label layoutX="152.0" layoutY="38.0" prefHeight="32.0" prefWidth="185.0" text="Welcome !" textFill="#0a76ff">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="iduser" fitHeight="89.0" fitWidth="112.0" layoutX="477.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" />
+            <Hyperlink fx:id="idlogout" layoutX="477.0" layoutY="100.0" onAction="#idlogout" text="Se déconnecter" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="41.0" layoutY="138.0" prefHeight="89.0" prefWidth="91.0" style="-fx-background-color: #f0f0f0;">
+         <children>
+            <ImageView fx:id="idprog" fitHeight="54.0" fitWidth="54.0" layoutX="24.0" layoutY="14.0" onMouseClicked="#idprog" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Utilitaire/icons8_cinema__25px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="31.0" layoutY="242.0" prefHeight="17.0" prefWidth="112.0" text="Gestion utilisateurs" textFill="BLUE" />
+      <AnchorPane layoutX="193.0" layoutY="134.0" prefHeight="97.0" prefWidth="104.0">
+         <children>
+            <ImageView fx:id="idevnt" fitHeight="77.0" fitWidth="91.0" layoutX="7.0" layoutY="14.0" onMouseClicked="#idevnt" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../Downloads/kisspng-esprit-higher-school-of-communication-of-tunis-con-emam-5b42b64c7b57f2.7796843715310987005052.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label fx:id="idevntt" layoutX="191.0" layoutY="251.0" onMouseClicked="#idevnt" text="Gestion Evenements" textFill="#23476b" />
+   </children>
+</AnchorPane>

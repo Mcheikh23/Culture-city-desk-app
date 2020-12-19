@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="bp" prefHeight="643.0" prefWidth="785.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.ModifierEController">
+   <children>
+      <TableView id="table" fx:id="TTm" layoutX="30.0" layoutY="28.0" prefHeight="327.0" prefWidth="642.0" stylesheets="@stylesheet.css">
+         <columns>
+            <TableColumn fx:id="imageEm" prefWidth="75.0" text="Picture" />
+            <TableColumn fx:id="Titrem" prefWidth="75.0" text="title" />
+            <TableColumn fx:id="empm" prefWidth="75.0" text="Bloc" />
+            <TableColumn fx:id="dateDm" prefWidth="75.0" text="StartDate" />
+            <TableColumn fx:id="DATEFm" prefWidth="92.0" text="EndDate" />
+            <TableColumn fx:id="NBRPm" prefWidth="81.0" text="NbrMmbr" />
+            <TableColumn fx:id="DESCm" prefWidth="64.0" text="DESCm" />
+            <TableColumn fx:id="CATEGm" prefWidth="63.0" text="CATEGm" />
+         </columns>
+      </TableView>
+      <ScrollBar layoutX="23.0" layoutY="54.0" orientation="VERTICAL" prefHeight="302.0" prefWidth="14.0" />
+      <Button fx:id="supprimE" layoutX="63.0" layoutY="403.0" mnemonicParsing="false" onAction="#supprimerE" prefHeight="59.0" prefWidth="138.0" text="DELETE" />
+      <Button fx:id="up" layoutX="544.0" layoutY="403.0" mnemonicParsing="false" onAction="#up" prefHeight="59.0" prefWidth="138.0" text="UPDATE" />
+      <Button fx:id="sha" layoutX="256.0" layoutY="403.0" mnemonicParsing="false" onAction="#shar" prefHeight="59.0" prefWidth="232.0" text="Share on facebook" />
+      <Button fx:id="rr" layoutX="303.0" layoutY="481.0" mnemonicParsing="false" onAction="#rr" prefHeight="48.0" prefWidth="138.0" text="Return" />
+   </children>
+</AnchorPane>

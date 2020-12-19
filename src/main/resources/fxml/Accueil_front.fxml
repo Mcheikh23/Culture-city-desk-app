@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.Accueil_frontController">
+   <children>
+      <Pane layoutX="147.0" layoutY="123.0" opacity="0.65" prefHeight="200.0" prefWidth="307.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView fx:id="news" fitHeight="57.0" fitWidth="71.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#nwes" pickOnBounds="true">
+               <image>
+                  <Image url="@../Utilitaire/icon-70-512.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="event" fitHeight="57.0" fitWidth="57.0" layoutX="125.0" layoutY="14.0" onMouseClicked="#evenement" pickOnBounds="true">
+               <image>
+                  <Image url="@../Utilitaire/074-512.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="prog" fitHeight="67.0" fitWidth="57.0" layoutX="221.0" layoutY="14.0" onMouseClicked="#programme" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Utilitaire/calendar.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="vente" fitHeight="57.0" fitWidth="57.0" layoutX="57.0" layoutY="105.0" onMouseClicked="#ticket" pickOnBounds="true">
+               <image>
+                  <Image url="@../Utilitaire/ticket-icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="forum" fitHeight="50.0" fitWidth="64.0" layoutX="169.0" layoutY="109.0" onMouseClicked="#forum" pickOnBounds="true">
+               <image>
+                  <Image url="@../Utilitaire/26-512.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label layoutX="107.0" layoutY="44.0" prefHeight="68.0" prefWidth="387.0" text="Cité de la culture" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="46.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="connecter" fitHeight="41.0" fitWidth="44.0" layoutX="519.0" layoutY="44.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Utilitaire/User-icon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

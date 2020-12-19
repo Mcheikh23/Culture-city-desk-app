@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.AcceuilVenteController">
+   <children>
+      <Pane layoutX="-1.0" layoutY="-1.0" prefHeight="134.0" prefWidth="700.0">
+         <children>
+            <Label layoutX="187.0" layoutY="15.0" prefHeight="55.0" prefWidth="452.0" text="Sale Space" textAlignment="CENTER" textFill="#886de8" textOverrun="CENTER_WORD_ELLIPSIS">
+               <font>
+                  <Font name="Algerian" size="49.0" />
+               </font>
+            </Label>
+            <Hyperlink fx:id="consCat" layoutX="55.0" layoutY="93.0" text="Consult Categories" underline="true">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font></Hyperlink>
+            <Hyperlink fx:id="consart" layoutX="297.0" layoutY="94.0" text="Consult Articles" underline="true">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font></Hyperlink>
+            <Hyperlink fx:id="conscommande" layoutX="522.0" layoutY="98.0" text="Consult orders" underline="true">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font></Hyperlink>
+            <ImageView fx:id="exitgv" fitHeight="28.0" fitWidth="32.0" layoutX="651.0" layoutY="14.0" onMouseClicked="#BtnExit" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/cancel.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rtradm" fitHeight="28.0" fitWidth="28.0" layoutX="615.0" layoutY="14.0" onMouseClicked="#retourespadmin" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/ret.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <HBox layoutX="-1.0" layoutY="134.0" prefHeight="266.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="401.0" fitWidth="700.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/imagevente.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
